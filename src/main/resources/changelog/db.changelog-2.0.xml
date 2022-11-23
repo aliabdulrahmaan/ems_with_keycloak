@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+
+<!--    <changeSet id="2022-11-16/002" author="aliassad">-->
+
+<!--        <addColumn tableName="employee">-->
+<!--            <column name="birth_date" type="DATETIME(6)"/>-->
+<!--        </addColumn>-->
+
+<!--        <addColumn tableName="department">-->
+<!--            <column name="refNumber" type="VARCHAR(255)"/>-->
+<!--        </addColumn>-->
+
+
+<!--    </changeSet>-->
+
+
+</databaseChangeLog>
