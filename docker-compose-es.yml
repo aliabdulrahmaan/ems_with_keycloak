@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.6
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    networks:
+      - emsdb
+    volumes:
+      - /usr/share/elasticsearch/data
+    environment:
+      - node.name=es1
+      - cluster.name=emsdb-local
+      - http.host=0.0.0.0
+      - transport.host=127.0.0.1
+  kibana:
+    image: docker.elastic.co/kibana/kibana:6.7.2
+    ports:
+      - "5601:5601"
+    networks:
+      - emsdb
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200/
+  
+
+  
+networks:
+  emsdb:
